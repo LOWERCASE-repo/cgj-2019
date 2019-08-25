@@ -1,0 +1,254 @@
+
+TODO
+
+player walls
+roid walls
+player shooting
+roid spawning
+
+scripture
+
+text sounds
+
+
+
+tagline: A short story about rituals and expectations that leaves the fourth wall in shambles.
+
+toc and tic for voices
+
+
+
+press any key to eavesdrop
+
+*white text on black screen*
+
+got the heart?
+
+yep, you got the cauldron?
+
+mhm, i'm putting it on their Desktop *clang*
+
+we're actually doing this huh
+
+yeah not like we've got anything better to do
+
+reminds me of when w-
+
+HOLD THAT THOUGHT
+THE PLAYER'S HERE!! // player in violet
+
+* lines overlap *
+
+WHAT WHAT WHAT WHAT
+
+THEY WERENT SUPPOSED TO CHECK SO SOON
+
+QUICK SET UP THE FAKE GAME
+
+THE ASTEROIDS ONE??
+
+YES THAT ONE
+
+BUT IT'S SO BORING
+
+NO TIME JUST GOGOGO
+
+I FOUND THE BACKGROUND
+
+I GOT THE SPACESHIP
+
+WHERE THE HECK DID YOU PUT THE HAZARDS
+
+HERE CATCH
+
+NO DONT THROW THEM YOU UTTER BUFFOON
+
+WHERE IS THE SCOREBOARD
+
+I HAVE THE SCOREBOARD
+
+HEEEELLPP
+
+AAAAAAAAAAAAAAAAAAAAA
+
+AAAAAAAAAAAAAAAAAAAAA
+
+
+
+hope our cover isn't blown
+
+
+
+nah
+bet they thought it was a loading screen
+not like they can hear us
+
+yeah because this is totally a game
+
+we're definitely not lying about that
+
+nope not at all
+100% game here
+
+totally not doing anything suspicious
+
+yeah we wouldn't lie to them
+
+that'd be awfully deceitful of us
+
+good thing we're telling the truth
+
+back to the ritual?
+
+ayep
+
+*fire and bubble sfx*
+
+
+prob can get rid of the heart scene
+
+  oh shoot i dropped the heart
+
+    heart appears from left cultist, drifts to right
+
+  where'd it go?
+
+  dunno, i'm looking for it
+
+  why are you like this
+
+
+  * wait for heart to drift offscreen *
+
+  oh here it is
+
+  nice nice
+
+  it's a lil stale but stale hearts are still hearts
+
+  sure
+
+  *water plop*
+
+
+
+
+we ready?
+
+no looking back
+
+aight here we go
+
+3 3
+2 2
+1 1
+
+**Nyarrlotth MORG!** // morg replaces text, largest possible font size, crimson
+
+huh
+
+weird
+
+did it work?
+
+hmm i thin- YES YES IT DID WORK
+
+BY THE POPE
+
+TAKE THE HEART OUT NOWWW
+
+OF THE BOILING CAULDRON?
+WITH MY BARE HANDS??
+
+YES TAKE THE HEART OUT
+
+NO U
+
+  windows pop up!!
+
+  WHO DARES WAKE ME FROM MY SLUMBER?
+  <USERNAME>!
+  IT WAS YOU!
+  
+  * loop threats *
+  
+  MAKE PEACE WITH YOUR GOD, FOR THIS IS THE DAY THEY DIE
+  I WILL FORCE FEED YOU A CHEESE GRATER
+  I SHALL DEFENESTRATE YOU
+  HOPE YOU ENJOY BEING ON FIRE FOREVER
+  BET THE RUN TO YOUR NEAREST POLICE STATION IS LONGER THAN TEN MINUTES
+  
+
+while threats loop:
+
+uh oh
+
+really didn't this through huh
+
+call the foundation
+
+i need a priest
+
+don't worry i've got a theoretical degree in physics
+
+*flipping through grimoire*
+
+take the heart out!
+
+the heck you mean take the heart out?
+of the BOILING CAULDRON?
+with my BARE HANDS??
+
+yeah obviously
+
+well i'm not doing it
+
+well now i'm not going to
+
+* wait a bit before giving solution *
+
+i bet the Player could
+
+yeah ofc they could
+the cauldron's right on their Desktop
+
+if only there was a way to tell them
+
+
+
+
+  dialogue changes depending on action taken to the cauldron
+  ARGH
+  MY HEART
+  NNOOOOOOOOOO
+  OOOOOOOOOOO
+  OOOOOOooo
+  ooo
+  * wait a bit *
+  o
+
+
+welp
+
+sums it up
+
+wanna get bubble tea?
+
+yea
+
+* text starts shrinking *
+
+that was fun though
+
+again?
+
+oh heck yeah
+
+
+
+
+
+THANKS FOR PLAYING!
+
+Aside from the cauldron and heart, 
+no other files were created by these scripts.
