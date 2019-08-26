@@ -24,9 +24,9 @@ public class Player : Entity {
       yield return null;
     }
     Bullet bullet = bullets[bulletIndex];
-    bullet.gameObject.SetActive(true);
     bullet.transform.position = rb.position;
-    bullet.rb.rotation = rb.rotation;
+    bullet.transform.rotation = Quaternion.AngleAxis(rb.rotation, Vector3.forward);
+    bullet.gameObject.SetActive(true); // needs to be after for the muzzle fx
     bullet.rb.velocity = transform.up * bullet.speed * 2f;
     bulletIndex = (bulletIndex + 1) % bullets.Length;
     yield return new WaitForSecondsRealtime(fireRate);

@@ -1,18 +1,16 @@
 
 TODO
 
-player walls
-roid walls
-player shooting
-roid spawning
-
 scripture
+spaceship spin
+boiling fire sfx
+grammar grammar
 
 text sounds
 
 
 
-tagline: A short story about rituals and expectations that leaves the fourth wall in shambles.
+tagline: 
 
 toc and tic for voices
 
@@ -105,33 +103,40 @@ ayep
 *fire and bubble sfx*
 
 
-prob can get rid of the heart scene
 
-  oh shoot i dropped the heart
+why asteroids?
 
-    heart appears from left cultist, drifts to right
+you said to make this look like a game
 
-  where'd it go?
+but asteroids is *so* 19th century
 
-  dunno, i'm looking for it
+whateveerr
+i mean the player seems to like it
+theyve scored %points% points already
 
-  why are you like this
+harrumph fine
 
 
-  * wait for heart to drift offscreen *
+aight, the cauldron's ready
 
-  oh here it is
+fi nal ly
+oh shoot i dropped the heart
 
-  nice nice
+where'd it go?
 
-  it's a lil stale but stale hearts are still hearts
+dunno, i'm looking for it
 
-  sure
+why are we like this
+
+
+
+found it!
+
+it's a lil stale but stale hearts are still hearts
+
+sure
 
   *water plop*
-
-
-
 
 we ready?
 
@@ -149,11 +154,17 @@ huh
 
 weird
 
+// red voronoi starts fading in
+
 did it work?
 
 hmm i thin- YES YES IT DID WORK
 
 BY THE POPE
+
+CALL THE FOUNDATION
+
+REALLY DIDN'T THINK THIS THROUGH
 
 TAKE THE HEART OUT NOWWW
 
@@ -167,8 +178,9 @@ NO U
   windows pop up!!
 
   WHO DARES WAKE ME FROM MY SLUMBER?
-  <USERNAME>!
+  <USERNAME>! // uppercase it
   IT WAS YOU!
+  UNTIL I AM DEFEATED, I SHALL PUMMEL YOU 
   
   * loop threats *
   
@@ -178,46 +190,7 @@ NO U
   HOPE YOU ENJOY BEING ON FIRE FOREVER
   BET THE RUN TO YOUR NEAREST POLICE STATION IS LONGER THAN TEN MINUTES
   
-
-while threats loop:
-
-uh oh
-
-really didn't this through huh
-
-call the foundation
-
-i need a priest
-
-don't worry i've got a theoretical degree in physics
-
-*flipping through grimoire*
-
-take the heart out!
-
-the heck you mean take the heart out?
-of the BOILING CAULDRON?
-with my BARE HANDS??
-
-yeah obviously
-
-well i'm not doing it
-
-well now i'm not going to
-
-* wait a bit before giving solution *
-
-i bet the Player could
-
-yeah ofc they could
-the cauldron's right on their Desktop
-
-if only there was a way to tell them
-
-
-
-
-  dialogue changes depending on action taken to the cauldron
+  
   ARGH
   MY HEART
   NNOOOOOOOOOO
@@ -227,6 +200,7 @@ if only there was a way to tell them
   * wait a bit *
   o
 
+... ...
 
 welp
 
@@ -234,7 +208,7 @@ sums it up
 
 wanna get bubble tea?
 
-yea
+yeah
 
 * text starts shrinking *
 
@@ -251,4 +225,4 @@ oh heck yeah
 THANKS FOR PLAYING!
 
 Aside from the cauldron and heart, 
-no other files were created by these scripts.
+no other files were created or modified by the developer's code.

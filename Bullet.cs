@@ -6,13 +6,21 @@ public class Bullet : Entity {
   [SerializeField]
   private Scoreboard scoreboard;
   [SerializeField]
-  private GameObject explosion;
+  private GameObject muzzle;
+  [SerializeField]
+  private GameObject explosion; // rename to impact next time
   
   protected override void Start() {
     base.Start();
   }
+  
+  private void OnEnable() {
+    muzzle.transform.position = transform.position;
+    muzzle.transform.rotation = transform.rotation;
+    muzzle.SetActive(true);
+  }
 
-  protected void FixedUpdate() {
+  private void FixedUpdate() {
     Move(rb.velocity);
     Rotate(rb.velocity);
   }

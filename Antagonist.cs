@@ -15,7 +15,6 @@ public class Antagonist : MonoBehaviour {
     
     alerter.Alert("WHO DARES WAKE ME FROM MY SLUMBER?", "???");
     alerter.Alert("<USERNAME>!", "???");
-    alerter.Alert("IT WAS YOU WHO WOKE ME UP!", "???");
     alerter.Alert("I WILL FORCE FEED YOU A CHEESE GRATER", "???");
     alerter.Alert("MAKE PEACE WITH YOUR GOD, FOR THIS IS THE DAY THEY DIE", "???");
     alerter.Alert("I SHALL DEFENESTRATE YOU", "???");

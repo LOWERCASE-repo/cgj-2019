@@ -14,9 +14,29 @@ public class Cultist : MonoBehaviour {
   internal float speakSpeed = 20f;
   [SerializeField]
   private Animator anim;
+  [SerializeField]
+  private AudioClip clip;
+  [SerializeField]
+  private AudioSource audio;
   // * for shout
   
-  private IEnumerator Say(string text) {
+  private IEnumerator ShrinkText() {
+    textBox.fontSize -= Time.deltaTime * 2.5f;
+    if (textBox.fontSize < 0f) {
+      textBox.fontSize = 0f;
+      // door close sfx
+    }
+    audio.volume = textBox.fontSize / 36f;
+    yield return null;
+    StartCoroutine(ShrinkText());
+  }
+  
+  internal void Shrink() {
+    StartCoroutine(ShrinkText());
+  }
+  
+  private bool sounded;
+  internal IEnumerator Say(string text) { // should be private but i wanted to say the player's score
     textBox.text = "";
     int shoutCount = 0;
     float delay = 1f / speakSpeed;
@@ -36,6 +56,11 @@ public class Cultist : MonoBehaviour {
         textBox.text += letter;
         if (!shouting) {
           yield return new WaitForSecondsRealtime(delay);
+          if (!sounded && letter != '.') {
+            audio.pitch = 1.1f - Random.value * 0.2f;
+            audio.PlayOneShot(clip);
+          }
+          sounded = !sounded;
         } else {
           shoutDelay += delay;
         }
@@ -48,9 +73,5 @@ public class Cultist : MonoBehaviour {
     StartCoroutine(Say(line));
     dialogIndex++;
     return line.Length / speakSpeed;
-  }
-  
-  private void Start() {
-    
   }
 }
