@@ -14,6 +14,8 @@ public class Clock : MonoBehaviour {
   [SerializeField]
   private Animator player;
   [SerializeField]
+  private Animator scoreboard;
+  [SerializeField]
   private GameObject roidCage;
   
   private Alerter alerter;
@@ -60,7 +62,7 @@ public class Clock : MonoBehaviour {
     yield return new WaitForSecondsRealtime(left.Speak() + 0.5f);
     yield return new WaitForSecondsRealtime(right.Speak() + 0.3f);
     yield return new WaitForSecondsRealtime(left.Speak() + 0.3f);
-    
+    scoreboard.SetTrigger("Throw");
     yield return new WaitForSecondsRealtime(right.Speak());
     left.Speak();
     left.speakSpeed = 10f;
@@ -77,7 +79,7 @@ public class Clock : MonoBehaviour {
     
     alerter.Alert("whoops ran out of content", "oh no");
     alerter.Alert("see you around, " + username + " ;)", "oh no");
-    Application.Quit();
+    // Application.Quit();
     
     /*
     left.speakSpeed = 20f;

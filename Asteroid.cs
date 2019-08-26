@@ -20,7 +20,7 @@ public class Asteroid : Entity {
   }
   
   private void OnTriggerExit2D() {
-    Reset();
+    rb.velocity = -rb.position + Random.insideUnitCircle * 3f;
   }
   
   private void OnCollisionEnter2D() {

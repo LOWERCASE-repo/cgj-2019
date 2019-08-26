@@ -25,7 +25,7 @@ public class Cultist : MonoBehaviour {
     foreach (char letter in text.ToCharArray()) {
       if (letter == '*') {
         if (shouting == true) {
-          yield return new WaitForSecondsRealtime(shoutDelay * 1.2f);
+          yield return new WaitForSecondsRealtime(shoutDelay);
           shoutDelay = 0f;
         } else {
           anim.SetTrigger("Shake");

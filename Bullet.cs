@@ -3,6 +3,11 @@ using System.Collections;
 
 public class Bullet : Entity {
   
+  [SerializeField]
+  private Scoreboard scoreboard;
+  [SerializeField]
+  private GameObject explosion;
+  
   protected override void Start() {
     base.Start();
   }
@@ -15,8 +20,8 @@ public class Bullet : Entity {
   private void OnCollisionEnter2D(Collision2D collision) {
     Asteroid roid = collision.gameObject.GetComponent<Asteroid>();
     roid.Reset();
+    scoreboard.AddScore();
     gameObject.SetActive(false);
-    // add score
   }
   
   private void OnTriggerEnter2D(Collider2D collider) {
@@ -27,5 +32,10 @@ public class Bullet : Entity {
   
   private void OnTriggerExit2D() {
     gameObject.SetActive(false);
+  }
+  
+  private void OnDisable() {
+    explosion.transform.position = rb.position;
+    explosion.SetActive(true);
   }
 }
