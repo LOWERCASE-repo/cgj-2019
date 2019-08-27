@@ -3,8 +3,11 @@ using System.Collections;
 
 public class Asteroid : Entity {
   
-  // [SerializeField]
-  // private Scoreboard sb;
+  [SerializeField]
+  private Scoreboard sb;
+  
+  [SerializeField]
+  private GameObject grind;
   
   internal void Reset() {
     rb.position = Random.insideUnitCircle.normalized * 10f;
@@ -23,7 +26,13 @@ public class Asteroid : Entity {
     rb.velocity = -rb.position + Random.insideUnitCircle * 3f;
   }
   
-  private void OnCollisionEnter2D() {
-    // check for player
+  private void OnCollisionEnter2D(Collision2D collision) {
+    if (collision.gameObject.name == "Player") {
+      Vector2 pos = collision.GetContact(0).point;
+      float ang = Vector2.SignedAngle(Vector2.up, pos - rb.position);
+      Quaternion rot = Quaternion.AngleAxis(ang, Vector3.forward);
+      Instantiate(grind, pos, rot);
+      sb.LoseScore();
+    }
   }
 }

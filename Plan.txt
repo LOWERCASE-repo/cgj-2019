@@ -1,14 +1,7 @@
 
 TODO
 
-scripture
-spaceship spin
-boiling fire sfx
-grammar grammar
-
-text sounds
-
-
+hazard hit sfx anim and score loss
 
 tagline: 
 

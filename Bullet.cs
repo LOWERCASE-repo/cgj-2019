@@ -25,15 +25,13 @@ public class Bullet : Entity {
     Rotate(rb.velocity);
   }
   
-  private void OnCollisionEnter2D(Collision2D collision) {
-    Asteroid roid = collision.gameObject.GetComponent<Asteroid>();
-    roid.Reset();
-    scoreboard.AddScore();
-    gameObject.SetActive(false);
-  }
-  
   private void OnTriggerEnter2D(Collider2D collider) {
     if (collider.gameObject.name == "Cage") {
+      gameObject.SetActive(false);
+    } else if (collider.gameObject.name == "Asteroid") {
+      Asteroid roid = collider.gameObject.GetComponent<Asteroid>();
+      roid.Reset();
+      scoreboard.AddScore();
       gameObject.SetActive(false);
     }
   }

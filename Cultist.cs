@@ -17,6 +17,8 @@ public class Cultist : MonoBehaviour {
   [SerializeField]
   private AudioClip clip;
   [SerializeField]
+  private AudioClip shout;
+  [SerializeField]
   private AudioSource audio;
   // * for shout
   
@@ -45,6 +47,9 @@ public class Cultist : MonoBehaviour {
     foreach (char letter in text.ToCharArray()) {
       if (letter == '*') {
         if (shouting == true) {
+          yield return new WaitForSecondsRealtime(0.1f);
+          audio.pitch = 1.05f - Random.value * 0.1f;
+          audio.PlayOneShot(shout);
           yield return new WaitForSecondsRealtime(shoutDelay);
           shoutDelay = 0f;
         } else {
