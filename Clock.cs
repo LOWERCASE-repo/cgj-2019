@@ -42,6 +42,8 @@ public class Clock : MonoBehaviour {
   
   [SerializeField]
   private AudioSource secondary;
+  [SerializeField]
+  private AudioSource music;
   private bool playedMain;
   
   private Alerter alerter;
@@ -164,11 +166,10 @@ public class Clock : MonoBehaviour {
     heart.Close();
     yield return new WaitForSecondsRealtime(1.5f);
     
-    // * sploosh *
-    
     yield return new WaitForSecondsRealtime(left.Speak() + 1f); // ready
     yield return new WaitForSecondsRealtime(right.Speak() + 1f); // no looking back
     yield return new WaitForSecondsRealtime(left.Speak() + 2f);
+    StartCoroutine(FadeMusic());
     
     for (int j = 0; j < 3; j++) {
       left.Speak();
@@ -243,6 +244,8 @@ public class Clock : MonoBehaviour {
     left.speakSpeed = 1f;
     right.speakSpeed = 1f;
     
+    StartCoroutine(UnFadeMusic());
+    
     left.Speak(); // ...
     yield return new WaitForSecondsRealtime(right.Speak() + 1f);
     
@@ -282,5 +285,18 @@ public class Clock : MonoBehaviour {
     playedMain = !playedMain;
     alerter.Alert(text, "???");
     return !File.Exists(desktop + "/Cauldron/Heart");
+  }
+  
+  private IEnumerator FadeMusic() {
+    music.volume = Mathf.Lerp(music.volume, 0f, 0.05f);
+    yield return new WaitForFixedUpdate();
+    if (music.volume > 0f) StartCoroutine(FadeMusic());
+  }
+  
+  private IEnumerator UnFadeMusic() {
+    music.volume = Mathf.Lerp(music.volume, 1f, 0.05f);
+    yield return new WaitForFixedUpdate();
+    if (music.volume < 1f) StartCoroutine(FadeMusic());
+    
   }
 }
